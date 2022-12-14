@@ -1,0 +1,97 @@
+:root {
+  --color-primary:#408af1;
+  --color-dark-blue:#14213d;
+  --color-black:#14213d;
+  --color-light-grey:#f6f2ee; }
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: Oswald sans-serif;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.navigation-wrapper {
+  background-color: var(--color-primary);
+  position: sticky; }
+
+.navigation {
+  background-color: var(--color-primary);
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+
+.logo-box {
+  padding: .7rem 1rem; }
+
+.logo {
+  height: 5rem;
+  width: 5rem; }
+
+.list-box {
+  margin: auto 0; }
+
+.list {
+  list-style: none; }
+  .list__item {
+    display: inline-block;
+    padding: 0 2rem; }
+  .list__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: capitalize;
+    transition: all .2s; }
+    .list__link:hover {
+      color: var(--color-dark-blue); }
+    .list__link--arrow:link, .list__link--arrow:visited {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .list__link--arrow:link::after, .list__link--arrow:visited::after {
+        content: '';
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+        background-color: #fff;
+        -webkit-mask-image: url(../../img/SVG/chevron-thin-down.svg);
+        -webkit-mask-size: cover;
+        transition: all .2s; }
+    .list__link--arrow:hover::after {
+      background-color: var(--color-dark-blue);
+      transform: rotate(180deg); }
+
+.dropdown {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  display: none;
+  position: relative;
+  transition: all 1s; }
+  .dropdown__item {
+    list-style: none; }
+  .dropdown__link {
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: 2rem; }
+    .dropdown__link:not(:first-child) {
+      padding-top: 1rem; }
+    .dropdown__link:hover {
+      color: var(--color-primary); }
+
+.list__link--arrow:hover ~ .dropdown,
+.list__link--arrow:checked ~ .dropdown {
+  display: block;
+  position: absolute; }
