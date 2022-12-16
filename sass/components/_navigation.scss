@@ -62,6 +62,8 @@
                 width: 2rem;
                 background-color: #fff;
                 //background-image: url(../../img/arrow-down-svgrepo-com.svg);
+                mask-image:url(../../img/SVG/chevron-thin-down.svg);
+                mask-size:cover;
                 -webkit-mask-image: url(../../img/SVG/chevron-thin-down.svg);
                 -webkit-mask-size: cover;
                 transition: all .2s;
