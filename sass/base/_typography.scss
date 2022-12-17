@@ -1,9 +1,24 @@
 .text-box {
-
+margin-left: 20rem;
+margin-top: 10rem;
+margin-right: -4rem;
+width: 60%;
+padding: 2rem;
 
 }
 
 .heading-primary {
+    color: var(--color-black);
+    font-size: 6rem;
+    font-weight: 700;
+    width: 75%;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
 
-    
+.header-text {
+    color: #fff;
+    font-size: 2rem;
+    width: 65%;
+    margin-bottom: 5rem;
 }

@@ -9,7 +9,8 @@
 
 }
 
-.btn {
+.btn,
+.heading-btn {
     
     font-size: 2.2rem;
     padding: 1rem 1.8rem;
@@ -20,22 +21,25 @@
 
 }
 
-.btn-login {
+.btn-login,
+.heading-btn:link {
     background-color: #fff;
     color: var(--color-primary);
     margin-right: 1.8rem;
     box-shadow: var(--shadow-dark);
     transition: all .2s;
 
-    &:hover {
+    &:hover
+     {
         box-shadow: none;
-        transform: translateY(.5rem) translateX(.5rem) ;
+        transform: translateY(.5rem) translateX(.5rem);
     }
 }
 
 .btn-signup {
     background-color:var(--color-primary);
     color: #fff;
+    margin-right: 1rem;
     border: 1px solid #fff;
     transition: all .2s;
     &:hover {
@@ -43,4 +47,19 @@
         background-color: #fff;
     }
 
+}
+
+.heading-btn {
+    display: inline-block;
+    text-decoration: none; 
+    background-color: #fff;
+    color: var(--color-primary);
+    margin-right: 1.8rem;
+    box-shadow: var(--shadow-dark);
+    transition: all .2s;
+}
+
+.heading-btn:hover {
+        box-shadow: none;
+        transform: translateY(.5rem) translateX(.5rem);
 }
