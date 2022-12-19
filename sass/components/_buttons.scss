@@ -60,6 +60,11 @@
 }
 
 .heading-btn:hover {
-        box-shadow: none;
-        transform: translateY(.5rem) translateX(.5rem);
+    box-shadow: none;
+    transform: translateY(.5rem) translateX(.5rem);
+}
+
+.services-btn {
+    background-color: var(--color-primary);
+    color: #fff;
 }

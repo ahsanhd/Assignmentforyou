@@ -1,14 +1,15 @@
 .header {
-    padding: 5rem 0;
+    padding: 2rem 0 20rem 0;
     background: var(--color-primary);
     border-bottom-left-radius: 8rem;
     border-bottom-right-radius: 8rem;
     overflow: hidden;
     display: flex;
+    flex: 1 0 90%;
 }
 
 .header-image-box {
-    margin-right: 40rem;
+    margin-right: 10rem;
 
 }
 
