@@ -212,7 +212,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  transition: all .2s; }
 
 .icon-tick {
   height: 5rem;
@@ -222,6 +223,9 @@ body {
     transition: all .2s; }
     .icon-tick--color:hover {
       fill: var(--color-primary); }
+
+.icon-box:hover > svg {
+  fill: var(--color-primary); }
 
 .header {
   padding: 2rem 0 20rem 0;
