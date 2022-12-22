@@ -48,16 +48,17 @@ body {
   margin: 0 auto; }
 
 .heading-secondary {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 500;
   color: var(--color-black);
   text-align: center;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  margin-bottom: 2rem; }
 
 .services-text {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--color-black);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center; }
 
 .heading-tertiary {
@@ -219,12 +220,9 @@ body {
   height: 5rem;
   width: 5rem; }
   .icon-tick--color {
-    fill: var(--color-black);
-    transition: all .2s; }
-    .icon-tick--color:hover {
-      fill: var(--color-primary); }
+    fill: var(--color-black); }
 
-.icon-box:hover > svg {
+.icon-box:hover > svg > path {
   fill: var(--color-primary); }
 
 .header {
@@ -260,13 +258,21 @@ body {
     margin-right: 5rem; }
 
 main {
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
 
 .section-services {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--color-light-grey);
+  border-bottom-left-radius: 8rem;
+  border-bottom-right-radius: 8rem;
+  padding: 10rem 0 15rem 0;
+  margin-top: -10rem; }
+
+.section-reviews {
+  background-color: #fff;
   border-bottom-left-radius: 8rem;
   border-bottom-right-radius: 8rem;
   padding: 10rem 0 15rem 0;

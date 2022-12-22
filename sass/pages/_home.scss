@@ -1,5 +1,6 @@
 main {
     display: flex;
+    flex-direction: column;
 }
 
 .section-services {
@@ -11,4 +12,13 @@ main {
     border-bottom-right-radius: 8rem;
     padding: 10rem 0 15rem 0;
     margin-top: -10rem;
+}
+
+.section-reviews {
+    background-color: #fff;
+    border-bottom-left-radius: 8rem;
+    border-bottom-right-radius: 8rem;
+    padding: 10rem 0 15rem 0;
+    margin-top: -10rem;
+
 }
