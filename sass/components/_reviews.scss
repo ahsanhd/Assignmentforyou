@@ -1,6 +1,8 @@
 .section-writer {
     background-color: var(--color-light-grey);
-    height: 30rem;
+    height: fit-content !important;
+    padding: 4rem;
+    border-radius: 1rem;
 
 }
 
@@ -22,8 +24,8 @@
 
 }
 .writer-pic {
-    height: 6rem;
-    width: 6rem;
+    height: 8rem;
+    width: 7.5rem;
     border-radius: 50%;
     
 }
@@ -34,7 +36,7 @@
 .writer__star-box {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
 }
 
@@ -47,7 +49,7 @@
     color: var(--color-black);
 }
 .writer__star-num {
-    margin-left: 1rem;
+    margin-left: 0rem;
     font-size: 1.7rem;
     font-weight: 700;
 }
@@ -76,4 +78,50 @@
     font-size: 1.2rem;
     font-weight: 100;
     margin-top: -1rem;
+}
+.writer__tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    padding: 0 2rem 2rem 2rem;
+    border-bottom: 2px solid var(--color-primary);
+
+}
+.writer__tag {
+    display: inline-block;
+    margin-top: .5rem;
+    margin-right: .5rem;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 1.2rem;
+}
+.writer__review {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 0 2rem; 
+    margin-top: 3rem;
+}
+.writer__content {
+    margin-top: 2rem;
+}
+.writer__title {
+    margin-bottom: .5rem;
+    line-height: 120%;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.writer__paper{
+    margin-bottom: .5rem;
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.writers__review-text {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.section-writer:hover > .writer__tags > .writer__tag {
+    background-color: var(--color-primary);
 }
