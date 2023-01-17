@@ -67,3 +67,22 @@ padding: 2rem;
     font-size: 2rem;
     font-weight: 300;
 }
+
+
+.footer-text {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.footer-color {
+    color: #fff;
+}
+.footer-heading {
+    text-align: left;
+}
+.social__link {
+
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+}
